@@ -4,24 +4,25 @@ public class Main {
     public static void main(String[] args) {
 
 //Task 1
-        System.out.println("Задача 1\n");
+        System.out.println("\nЗадача 1\n");
         int salary = 0;
         int monthCount = 0;
         while ( salary <= 2_459_000 ){
             salary += 15_000;
             monthCount++;
+            String strSalary = new DecimalFormat("###,###").format(salary);
+            System.out.printf("Месяц %d, сумма накоплений равна %s рублей\n", monthCount, strSalary);
         }
-        System.out.printf("Месяц %d, сумма накоплений равна %d рублей\n", monthCount, salary);
 //Task 2
         System.out.println("\nЗадача 2\n");
-        for (int i = 1; i <= 10; i++){
+        int i = 0;
+        while ( i <= 10 ){
             System.out.print( i + " ");
+            i++;
         }
         System.out.println();
-        int i = 10;
-        while ( i > 0 ){
-            System.out.print( i + " ");
-            i--;
+        for (int j = 10; j >= 0; j--){
+            System.out.print( j + " ");
         }
         System.out.println();
 //Task 3
