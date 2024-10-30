@@ -15,13 +15,13 @@ public class Main {
         }
 //Task 2
         System.out.println("\nЗадача 2\n");
-        int i = 0;
+        int i = 1;
         while ( i <= 10 ){
             System.out.print( i + " ");
             i++;
         }
         System.out.println();
-        for (int j = 10; j >= 0; j--){
+        for (int j = 10; j > 0; j--){
             System.out.print( j + " ");
         }
         System.out.println();
